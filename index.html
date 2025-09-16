@@ -240,12 +240,30 @@ button.prev, button.next {
   text-decoration: none;
   box-shadow: 0 6px 16px rgba(0,0,0,0.25);
   transition: transform 0.3s ease, background 0.3s ease;
+  animation: pulse 1.8s infinite;
 }
 
 .botao-produto-grande:hover {
   background-color: #c4a90a;
   transform: scale(1.05);
 }
+
+/* Animação pulsante */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(223, 195, 12, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(223, 195, 12, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(223, 195, 12, 0);
+  }
+}
+
 
 
 @media (max-width: 600px) {
@@ -492,9 +510,9 @@ button.next { right: 10px; }
     <a href="./13 Pro Max.html"  style="text-decoration:none; color:inherit;">
       <div style="width:300px; background:#f9f9f9; border-radius:8px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1); text-align:center;">
         <img src="iPhone 13 Pro Max.png" alt="iPhone 13" style="width:100%; border-radius:8px;">
-        <h3 style="margin:15px 0 10px;">iPhone 13 PRO MAX</h3>
-        <p style="color:#555;">128GB • Tela Super Retina • Câmera dupla</p>
-        <strong style="display:block; margin:10px 0; font-size:1.2em; color:#dfc30c;">R$ 4.299,00</strong>
+        <h3 style="margin:15px 0 10px;">iPhone 13 Pro Max</h3>
+
+
         <div style="background:#25D366; color:#fff; padding:10px 15px; border-radius:5px; display:inline-block;">COMPRAR</div>
       </div>
     </a>
@@ -504,8 +522,8 @@ button.next { right: 10px; }
       <div style="width:300px; background:#f9f9f9; border-radius:8px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1); text-align:center;">
         <img src="iPhone 14.png" alt="iPhone 14" style="width:100%; border-radius:8px;">
         <h3 style="margin:15px 0 10px;">iPhone 14</h3>
-        <p style="color:#555;">256GB • Dynamic Island • Câmera tripla</p>
-        <strong style="display:block; margin:10px 0; font-size:1.2em; color:#dfc30c;">R$ 6.899,00</strong>
+ 
+
         <div style="background:#25D366; color:#fff; padding:10px 15px; border-radius:5px; display:inline-block;">COMPRAR</div>
       </div>
     </a>
@@ -515,8 +533,8 @@ button.next { right: 10px; }
       <div style="width:300px; background:#f9f9f9; border-radius:8px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1); text-align:center;">
         <img src="iPhone 15 Pro Max.png" alt="iPhone 15 Pro Max" style="width:100%; border-radius:8px;">
         <h3 style="margin:15px 0 10px;">iPhone 15 Pro Max</h3>
-        <p style="color:#555;">256GB • Titanium • Zoom óptico 5x</p>
-        <strong style="display:block; margin:10px 0; font-size:1.2em; color:#dfc30c;">R$ 9.499,00</strong>
+ 
+ 
         <div style="background:#25D366; color:#fff; padding:10px 15px; border-radius:5px; display:inline-block;">COMPRAR</div>
       </div>
     </a>
@@ -526,8 +544,8 @@ button.next { right: 10px; }
       <div style="width:300px; background:#f9f9f9; border-radius:8px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1); text-align:center;">
         <img src="iPhone 15.png" alt="iPhone 15" style="width:100%; border-radius:8px;">
         <h3 style="margin:15px 0 10px;">iPhone 15</h3>
-        <p style="color:#555;">256GB • Titanium • Zoom óptico 5x</p>
-        <strong style="display:block; margin:10px 0; font-size:1.2em; color:#dfc30c;">R$ 2.999,00</strong>
+
+       
         <div style="background:#25D366; color:#fff; padding:10px 15px; border-radius:5px; display:inline-block;">COMPRAR</div>
       </div>
     </a>
