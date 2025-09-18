@@ -6,292 +6,77 @@
   <title>Comprar iPhone 15 Pro</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="logo.png" />
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f1f3f5;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      background: linear-gradient(to right, #000000, #1c1c1c);
-      padding: 15px 0;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-      
-      top: 0;
-      z-index: 100;
-    }
-
-    .logotipo {
-      max-width: 150px;
-      height: auto;
-    }
-
-    .navbar {
-      display: flex;
-      gap: 20px;
-    }
-
-    .navbar a {
-      color: #dfc30c;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    .navbar a:hover {
-      color: #fff;
-    }
-
-    .header-content {
-      max-width: 1400px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 30px;
-    }
-
-    .container {
-      max-width: 90%;
-      margin: 60px auto;
-      background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      padding: 40px;
-    }
-
-    .product-section {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-
-    .product-image {
-      flex: 1 1 400px;
-      text-align: center;
-    }
-
-    .product-image img {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-      margin: auto;
-      display: block;
-    }
-
-    .product-details {
-      flex: 1 1 400px;
-      background-color: #f8f9fa;
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .product-details h1 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    .product-details p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-      color: #555;
-    }
-
-    .price {
-      font-size: 1.8em;
-      color: #28a745;
-      font-weight: bold;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      padding: 15px 30px;
-      background-color: #28a745;
-      color: #fff;
-      font-size: 1.2em;
-      text-decoration: none;
-      border-radius: 8px;
-      cursor: pointer;
-      animation: pulse 1.5s infinite;
-      width: fit-content;
-      margin-bottom: 20px;
-    }
-
-    .btn:hover {
-      background-color: #28a745;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-
-    .iframe-container {
-      display: none;
-      margin-top: 40px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 1800px;
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      background: linear-gradient(to right, #000000, #1c1c1c);
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-      box-shadow: 0 -4px 12px rgba(0,0,0,0.2);
-      font-size: 1em;
-      margin-top: auto;
-    }
-
-    @media (max-width: 768px) {
-      .product-section {
-        flex-direction: column;
-      }
-
-      .product-image img {
-        width: 100%;
-        max-width: 100%;
-        border-radius: 10px;
-      }
-    }
-.navbar-menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-}
-
-.navbar-menu a {
-  color: #dfc30c;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 6px 10px;
-  transition: background-color 0.3s;
-    font-size: 0.95em;
-}
-
-.navbar-menu a:hover {
-  background-color: #333;
-  border-radius: 6px;
-  color: #fff;
-}
-.navbar-header {
-  background: linear-gradient(to right, #000000, #1c1c1c);
-  padding: 15px 0;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
- 
-  top: 0;
-  z-index: 100;
-}
-
-.navbar-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-  </style>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
 <header class="navbar-header">
   <div class="navbar-container">
-    <a href="index.html" class="logo-area">
+    <a href="index.html">
       <img src="logo.png" alt="Logo Loja iPhones" class="logotipo">
     </a>
-
+    <nav class="navbar-menu">
+      <a href="index.html">Início</a>
+      <a href="checkout-15pro.html">Comprar</a>
+      <a href="#contato">Contato</a>
+    </nav>
   </div>
 </header>
 
-  <main>
-    <div class="container">
-      <div class="product-section">
-        <div class="product-image">
-          <img src="iPhone 15 pro.png" alt="iPhone 15 Pro">
+<main>
+  <div class="container">
+    <div class="product-section">
+      <div class="product-image">
+        <img src="iPhone 15 pro.png" alt="Imagem do iPhone 15 Pro">
+      </div>
+      <div class="product-details">
+        <h1>iPhone 15 Pro</h1>
+        <p>iPhone 15 Pro com design moderno, câmera de 48 MP e chip A16 Bionic para alto desempenho. Tela Super Retina XDR, bateria duradoura e conexão USB-C. Ideal para quem busca inovação, estilo e potência.</p>
+
+        <label for="cor">Escolha a cor:</label>
+        <select id="cor" name="cor">
+          <option value="">Selecione</option>
+          <option value="branco">Branco</option>
+          <option value="preto">Preto</option>
+          <option value="natural">Natural</option>
+          <option value="azul">Azul</option>
+        </select>
+
+        <div class="price">
+          Entrada: <span style="color:#ff8400;">R$ 500,00</span><br>
+          Parcelado em <strong>18x de R$ 242,17</strong>
         </div>
-        <div class="product-details">
-          <h1>iPhone 15 Pro</h1>
-          <p>iPhone 15 Pro com design moderno, câmera de 48 MP e chip A16 Bionic para alto desempenho. Tela Super Retina XDR, bateria duradoura e conexão USB-C. Ideal para quem busca inovação, estilo e potência.</p>
 
-          <label for="cor" style="font-size: 1.1em; margin-bottom: 10px; color: #333;">Escolha a cor:</label>
-          <select id="cor" name="cor" style="
-            padding: 10px;
-            font-size: 1em;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            margin-bottom: 20px;
-            max-width: 200px;
-          ">
-            <option value="branco">Branco</option>
-            <option value="preto">Preto</option>
-            <option value="natural">Natural</option>
-            <option value="azul">Azul</option>
-          </select>
+        <button class="btn" id="comprarBtn">🛒 Comprar Agora</button>
 
-   <div class="price">
-    Entrada: <span style="color:#ff8400;">R$ 500,00</span><br>
-            Parcelado em <strong>18x de R$ 242,17</strong>
-          </div>
-
-          <div class="btn" onclick="abrirIframe()">🛒 Comprar Agora</div>
-
-          <div class="iframe-container" id="iframeContainer">
-            <iframe src="https://app.streetpay.com.br/payment/checkout/725978a1-d8fe-441e-9194-5dc8a4990852"></iframe>
-          </div>
-
-          <div style="margin-top:30px; font-size:1em; color:#555;">
-            ✅ Produto original, importado e com nota fiscal<br>
-            🚚 Entrega rápida para todo o Brasil<br>
-            🔒 Garantia de 90 meses
-          </div>
+        <div style="margin-top:30px; font-size:1em; color:#555;">
+          ✅ Produto original, importado e com nota fiscal<br>
+          🚚 Entrega rápida para todo o Brasil<br>
+          🔒 Garantia de 90 meses
         </div>
       </div>
     </div>
-  </main>
+  </div>
+</main>
 
-  <footer>
-    <h3 style="margin-bottom: 15px; font-size: 1.6em; color: #dfc30c; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
-      Loja de iPhones
-    </h3>
-    <p style="margin: 5px 0; font-weight: bold;">CNPJ: 12.345.678/0001-99</p>
-    <p>Rodovia Augusto Montenegro, 3501, Parque Verde, Belém - PA, CEP 66635-110</p>
-    <p>Somos especializados na venda de iPhones originais com suporte técnico de qualidade, garantia estendida e entrega rápida para todo o Brasil.</p>
-    <p style="margin-top: 15px; font-size: 0.9em;">&copy; 2025 Loja de iPhones. Todos os direitos reservados.</p>
-  </footer>
+<footer id="contato">
+  <h3 style="color: #dfc30c;">Loja de iPhones</h3>
+  <p><strong>CNPJ:</strong> 12.345.678/0001-99</p>
+  <p>Rodovia Augusto Montenegro, 3501, Parque Verde, Belém - PA, CEP 66635-110</p>
+  <p>Especialistas em iPhones originais com suporte técnico, garantia estendida e entrega rápida.</p>
+  <p style="margin-top: 15px;">&copy; 2025 Loja de iPhones. Todos os direitos reservados.</p>
+</footer>
 
-  <script>
-    function abrirIframe() {
-      const iframe = document.getElementById("iframeContainer");
-      iframe.style.display = "block";
-      window.scrollTo({
-        top: iframe.offsetTop,
-        behavior: "smooth"
-      });
+<script>
+  document.getElementById("comprarBtn").addEventListener("click", function () {
+    const corSelecionada = document.getElementById("cor").value;
+    if (!corSelecionada) {
+      alert("Por favor, selecione uma cor antes de continuar.");
+      return;
     }
-  </script>
+    window.location.href = `checkout-15pro.html?cor=${encodeURIComponent(corSelecionada)}`;
+  });
+</script>
 
 </body>
 </html>
